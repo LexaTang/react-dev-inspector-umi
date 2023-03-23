@@ -24,7 +24,7 @@ export default function inspectorPlugin(api: IApi3 | IApi4) {
     api.logger.info(`Using react-dev-inspector Umi4 plugin with Umi ${process.env.UMI_VERSION}.`)
     api4.addBeforeBabelPlugins(() => [
       [
-        require.resolve('@react-dev-inspector/babel-plugin'),
+        require.resolve('react-dev-inspector/plugins/babel'),
         {
           cwd: inspectorConfig?.cwd,
           excludes: [
